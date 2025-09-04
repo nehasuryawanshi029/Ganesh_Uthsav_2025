@@ -1,0 +1,169 @@
+<!--
+Ganesh Uthsav Landing Page — Modern Theme
+Save as index.html and open in a browser. Place all photos in /images folder.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Suryawanshi Family Ganapati Uthsav 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#f97316;
+      --bg:#0f172a;
+      --muted:#9aa4b2;
+      --maxwidth:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: 'Montserrat', sans-serif;
+      background: url('images/background-pattern.jpg'), linear-gradient(180deg,#1e1b4b 0%, #0f172a 100%);
+      background-size: cover;
+      background-attachment: fixed;
+      color:#e2e8f0;
+      padding:0; margin:0;
+    }
+    .container{width:100%;max-width:var(--maxwidth);margin:auto;padding:20px}
+
+    header{
+      position:relative;
+      height:80vh;
+      background:url('images/header.jpg') center/cover no-repeat;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;color:#fff;
+    }
+    header::after{
+      content:"";position:absolute;inset:0;background:rgba(0,0,0,0.5);
+    }
+    header .title{
+      position:relative;z-index:2;
+      font-family:'Playfair Display';font-size:52px;
+      text-shadow:0 4px 20px rgba(0,0,0,0.6);
+    }
+    header .subtitle{
+      position:relative;z-index:2;margin-top:12px;font-size:20px;font-style:italic;color:#fcd34d
+    }
+
+    section{margin:60px 0}
+    h2{font-family:'Playfair Display';font-size:34px;margin-bottom:20px;text-align:center;color:#facc15}
+    p{line-height:1.6;margin-bottom:16px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:14px;cursor:pointer;transition:transform .3s}
+    .gallery img:hover{transform:scale(1.05)}
+
+    .story{max-width:800px;margin:auto;text-align:center}
+    .story p{margin-bottom:18px}
+
+    .events{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .card{background:rgba(255,255,255,0.08);padding:20px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,0.4);backdrop-filter: blur(6px)}
+    .card h3{margin-bottom:10px;color:#fbbf24}
+
+    .invitation{text-align:center}
+    .invitation p{margin-bottom:14px}
+    .contact{margin-top:20px;font-size:15px;color:var(--muted)}
+
+    footer{text-align:center;padding:20px;font-size:13px;color:var(--muted);margin-top:40px}
+
+    /* Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:.3s;z-index:50}
+    .lightbox.show{opacity:1;visibility:visible}
+    .lightbox img{max-width:90%;max-height:85%;border-radius:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="title">Suryawanshi Family Ganapati Uthsav 2025</div>
+      <div class="subtitle">“ॐ गण गणपतये नमः — आनंदाचा सोहळा आपल्या घरात”</div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>📸 Memories & Preparations</h2>
+      <div class="gallery" id="gallery">
+        <img src="images/decoration.jpg" alt="Decoration" data-full="images/decoration.jpg">
+        <img src="images/preparation.jpg" alt="Ganesh Aagman Prep" data-full="images/preparation.jpg">
+        <img src="images/aagman.jpg" alt="Ganesh Aagman" data-full="images/aagman.jpg">
+        <img src="images/rangoli1.jpg" alt="Rangoli 1" data-full="images/rangoli1.jpg">
+        <img src="images/rangoli2.jpg" alt="Rangoli 2" data-full="images/rangoli2.jpg">
+        <img src="images/gauri-prep.jpg" alt="Gauri Prep" data-full="images/gauri-prep.jpg">
+        
+      </div>
+    </section>
+
+    <section>
+      <h2>📖 आमच्या कुटुंबाचा गणपती सोहळा</h2>
+      <div class="story">
+        <p>सूर्यवंशी कुटुंबात दरवर्षी दोन गणपतींचे आगमन होते. ही आगळीवेगळी परंपरा पिढ्यानपिढ्या चालत आली आहे. पहिला गणपती हा आमच्या पूर्वजांनी स्थापन केलेला, घराचा जिव्हाळ्याचा गणपती आहे. दुसरा गणपती नंतरच्या पिढीने सुरू केला जो एकता, भक्ती आणि कुटुंबातील ऐक्याचे प्रतीक आहे.</p>
+        <p>या परंपरेमुळे आमच्या घरातील भक्तीचा आणि आनंदाचा उत्सव दुप्पट होतो. दोन गणपतींमुळे आमचं घर उत्सवाच्या दिवसात अधिकच उजळून निघतं.</p>
+        <p><em>“गणपती बाप्पा मोरया, मंगलमुर्ती मोरया!”</em></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎉 Event Highlights</h2>
+      <div class="events">
+        <div class="card">
+          <h3>Ganesh Aarti</h3>
+          <p>An evening of devotion with aarti, incense, and prayers filling the atmosphere with divine energy.</p>
+        </div>
+        <div class="card">
+          <h3>Cultural Night</h3>
+          <p>Dance, songs, and performances by children and family members — bringing joy and smiles to all.</p>
+        </div>
+        <div class="card">
+          <h3>Games & Fun</h3>
+          <p>Fun-filled games and activities for all ages, making the festival lively and memorable.</p>
+        </div>
+        <div class="card">
+          <h3>Gauri Aagman</h3>
+          <p>The arrival of Gauri — a symbol of beauty, devotion, and prosperity in our family celebration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="invitation">
+      <h2>🙏 Invitation</h2>
+      <p>आपल्या उपस्थितीने आमच्या आनंदात भर पडेल. कृपया आपल्या कुटुंबासह उपस्थित राहा.</p>
+      <p><strong>Date:</strong> 22 September 2025 | <strong>Time:</strong> 6:00 PM onwards</p>
+      <p><strong>Venue:</strong> Suryawanshi Residence</p>
+      <div class="contact">
+        Contact: Neha Suryawanshi<br>
+        Phone: 78**********<br>
+        Email: nehasuryawanshi029@gmail.com
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 · Suryawanshi Family Ganapati Uthsav · ❤️
+  </footer>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script>
+    const gallery=document.getElementById('gallery');
+    const lightbox=document.getElementById('lightbox');
+    const lightboxImg=document.getElementById('lightboxImg');
+    gallery.addEventListener('click',e=>{
+      if(e.target.tagName!=='IMG')return;
+      lightboxImg.src=e.target.dataset.full||e.target.src;
+      lightbox.classList.add('show');
+    });
+    function closeLightbox(e){
+      if(e.target!==lightbox&&e.target!==lightboxImg)return;
+      lightbox.classList.remove('show');
+      lightboxImg.src='';
+    }
+  </script>
+</body>
+</html>
